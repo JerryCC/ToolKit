@@ -1,6 +1,6 @@
 import java.util.NoSuchElementException;
 
-public class LinkedLists<T> implements Lists<T>{
+public class LinkedList<T> implements Lists<T>{
 
 	public class Node<T>{
 		private T data;
@@ -12,8 +12,7 @@ public class LinkedLists<T> implements Lists<T>{
 		}
 
 		public Node(T data){
-			this.data = data;
-			this.next = null;
+			this(data, null);
 		}
 	}
 
